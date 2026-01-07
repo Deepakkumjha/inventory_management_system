@@ -45,7 +45,7 @@ def single_product(request, id):
                 serializer = ItemSerializers(item,data=request.data)
                 if serializer.is_valid():
                     serializer.save()
-                    return Response("item created", status=status.HTTP_201_CREATED)
+                    return Response("item updated", status=status.HTTP_201_CREATED)
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             if request.method == "PATCH":
                 serializer = ItemSerializers(item, data=request.data, partial=True)
