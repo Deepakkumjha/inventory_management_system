@@ -25,7 +25,7 @@ openpyxl
 ## SETUP INSTRUCTIONS
 #### 1. Clone the repository - 
 
-git clone <your-github-repository-url>
+git clone https://github.com/Deepakkumjha/inventory_management_system.git
 
 cd inventory_management_system
 
